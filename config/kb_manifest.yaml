@@ -1,0 +1,99 @@
+# Document -> category mapping (human-curated, reviewed like code).
+#
+# Model: documents are MULTI-label, queries are SINGLE-label.
+#   - `categories`: every category a document legitimately answers questions for.
+#     A chunk passes the retrieval filter if ANY of its categories matches.
+#   - `primary`: the owning category (used for reporting and display only).
+#   - `ambiguous: true` marks documents that deliberately span categories.
+#
+# Documents present in data/kb/ but missing here are auto-tagged at ingestion
+# time by the query classifier and flagged `auto_tagged` (see `sungrid audit`).
+
+documents:
+  01_program_policies:
+    primary: program_policies
+    categories: [program_policies]
+
+  02_incentive_rebate_programs:
+    primary: incentive_rebate
+    categories: [incentive_rebate]
+
+  03_billing_faqs:
+    primary: billing_account
+    categories: [billing_account]
+
+  04_technical_installation_guidance:
+    primary: technical_installation
+    categories: [technical_installation]
+
+  05_company_updates:
+    primary: company_updates
+    categories: [company_updates]
+
+  06_ambiguous_rebate_billing_adjustments:
+    primary: incentive_rebate
+    categories: [incentive_rebate, billing_account]
+    ambiguous: true
+    rationale: >-
+      Rebate reversal spans two owners: the Incentive Program committee makes the
+      reversal determination (and hears appeals), while the Billing team executes
+      the up-to-6-cycle adjustment and autopay handling. Members will ask about it
+      in both vocabularies ("my rebate was reversed" vs "there's a new adjustment
+      on my bill"), so the document is indexed ONCE and is reachable from BOTH
+      the incentive_rebate and billing_account filters. `primary` is
+      incentive_rebate because the determination (and therefore the appeal path)
+      originates there; billing is downstream execution. See
+      docs/CATEGORY_DECISIONS.md.
+
+  07_installer_certification:
+    primary: program_policies
+    categories: [program_policies]
+    rationale: >-
+      Installer certification is a membership/program rule that sits next to the
+      installer Code of Conduct in 01. It has a rebate consequence (lapsed
+      certification = non-approved installer), which the soft filter + unfiltered
+      fallback in retrieval handles without multi-labelling this doc.
+
+  08_governance_voting:
+    primary: program_policies
+    categories: [program_policies]
+
+  09_battery_storage_incentive:
+    primary: incentive_rebate
+    categories: [incentive_rebate]
+
+  10_low_income_bill_credit:
+    primary: incentive_rebate
+    categories: [incentive_rebate]
+    rationale: >-
+      Named as an incentive program in 02 ("Interaction with Other Incentive
+      Programs"). It appears on the bill, but eligibility/recertification is
+      program logic, not billing mechanics.
+
+  11_net_metering_trueup:
+    primary: billing_account
+    categories: [billing_account]
+
+  12_autopay_failure_policy:
+    primary: billing_account
+    categories: [billing_account]
+
+  13_battery_storage_installation:
+    primary: technical_installation
+    categories: [technical_installation]
+
+  14_annual_impact_report:
+    primary: company_updates
+    categories: [company_updates]
+
+# Policy sections the eligibility agent cites after a tool decision.
+# Referenced by "<doc_id>#<section title>" so they survive re-chunking.
+eligibility_followups:
+  ineligible:
+    - "02_incentive_rebate_programs#Appeals Process"
+  eligible:
+    - "02_incentive_rebate_programs#Program Funding Status"
+    - "02_incentive_rebate_programs#Documentation Requirements"
+  battery_terms:
+    - "09_battery_storage_incentive#Incentive Structure"
+    - "09_battery_storage_incentive#Eligibility"

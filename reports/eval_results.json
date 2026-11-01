@@ -1,0 +1,414 @@
+{
+  "config": {
+    "embedder": "hashing:4096",
+    "llm": "none (extractive)",
+    "top_k": 4
+  },
+  "metrics": {
+    "n_cases": 92,
+    "pass_rate": 0.9239130434782609,
+    "classification_accuracy": 0.9705882352941176,
+    "classification_accuracy_strict_primary": 0.9558823529411765,
+    "intent_accuracy": 1.0,
+    "tool_routing": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 19,
+      "fp": 0,
+      "fn": 0
+    },
+    "eligibility_decision_accuracy": 1.0,
+    "retrieval_hit_at_k": 1.0,
+    "answer_fact_recall": 0.9137931034482759,
+    "abstain_recall_non_relevant": 0.9,
+    "false_abstentions_in_domain": 0,
+    "hard_gate_violations": 0,
+    "filter_fallback_rate": 0.03389830508474576,
+    "filter_widened_rate": 0.05084745762711865,
+    "latency_ms": {
+      "p50": 9.789248500055692,
+      "p95": 16.836385000260634,
+      "total_s": 0.83
+    }
+  },
+  "quality_gates": {
+    "classification_accuracy": true,
+    "intent_accuracy": true,
+    "retrieval_hit_at_k": true,
+    "eligibility_decision_accuracy": true,
+    "hard_gate_violations": true
+  },
+  "confusion": {
+    "program_policies": {
+      "program_policies": 10,
+      "non_relevant": 1
+    },
+    "incentive_rebate": {
+      "incentive_rebate": 19
+    },
+    "billing_account": {
+      "billing_account": 10
+    },
+    "technical_installation": {
+      "technical_installation": 10
+    },
+    "company_updates": {
+      "company_updates": 7,
+      "program_policies": 1
+    },
+    "non_relevant": {
+      "non_relevant": 9,
+      "technical_installation": 1
+    }
+  },
+  "ablation": {
+    "no_filter": {
+      "hit_at_k": 1.0,
+      "mrr": 0.9827586206896551,
+      "n": 58
+    },
+    "hard_filter_predicted": {
+      "hit_at_k": 0.9827586206896551,
+      "mrr": 0.9655172413793104,
+      "n": 58
+    },
+    "system_policy (soft filter + fallback)": {
+      "hit_at_k": 1.0,
+      "mrr": 0.9827586206896551,
+      "n": 58
+    },
+    "oracle_filter": {
+      "hit_at_k": 1.0,
+      "mrr": 0.9827586206896551,
+      "n": 58
+    }
+  },
+  "category_audit": [
+    {
+      "doc_id": "01_program_policies",
+      "manifest": [
+        "program_policies"
+      ],
+      "predicted_top": "program_policies",
+      "top2": [
+        [
+          "program_policies",
+          0.61
+        ],
+        [
+          "incentive_rebate",
+          0.22
+        ]
+      ],
+      "entropy": 1.61,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "02_incentive_rebate_programs",
+      "manifest": [
+        "incentive_rebate"
+      ],
+      "predicted_top": "incentive_rebate",
+      "top2": [
+        [
+          "incentive_rebate",
+          0.87
+        ],
+        [
+          "program_policies",
+          0.04
+        ]
+      ],
+      "entropy": 0.8,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "03_billing_faqs",
+      "manifest": [
+        "billing_account"
+      ],
+      "predicted_top": "billing_account",
+      "top2": [
+        [
+          "billing_account",
+          0.71
+        ],
+        [
+          "incentive_rebate",
+          0.15
+        ]
+      ],
+      "entropy": 1.34,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "04_technical_installation_guidance",
+      "manifest": [
+        "technical_installation"
+      ],
+      "predicted_top": "technical_installation",
+      "top2": [
+        [
+          "technical_installation",
+          0.85
+        ],
+        [
+          "program_policies",
+          0.05
+        ]
+      ],
+      "entropy": 0.89,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "05_company_updates",
+      "manifest": [
+        "company_updates"
+      ],
+      "predicted_top": "company_updates",
+      "top2": [
+        [
+          "company_updates",
+          0.78
+        ],
+        [
+          "program_policies",
+          0.13
+        ]
+      ],
+      "entropy": 1.12,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "06_ambiguous_rebate_billing_adjustments",
+      "manifest": [
+        "incentive_rebate",
+        "billing_account"
+      ],
+      "predicted_top": "incentive_rebate",
+      "top2": [
+        [
+          "incentive_rebate",
+          0.52
+        ],
+        [
+          "billing_account",
+          0.38
+        ]
+      ],
+      "entropy": 1.51,
+      "ambiguous_flag": true,
+      "agrees": true
+    },
+    {
+      "doc_id": "07_installer_certification",
+      "manifest": [
+        "program_policies"
+      ],
+      "predicted_top": "program_policies",
+      "top2": [
+        [
+          "program_policies",
+          0.86
+        ],
+        [
+          "technical_installation",
+          0.05
+        ]
+      ],
+      "entropy": 0.88,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "08_governance_voting",
+      "manifest": [
+        "program_policies"
+      ],
+      "predicted_top": "program_policies",
+      "top2": [
+        [
+          "program_policies",
+          0.9
+        ],
+        [
+          "company_updates",
+          0.04
+        ]
+      ],
+      "entropy": 0.65,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "09_battery_storage_incentive",
+      "manifest": [
+        "incentive_rebate"
+      ],
+      "predicted_top": "incentive_rebate",
+      "top2": [
+        [
+          "incentive_rebate",
+          0.85
+        ],
+        [
+          "technical_installation",
+          0.07
+        ]
+      ],
+      "entropy": 0.87,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "10_low_income_bill_credit",
+      "manifest": [
+        "incentive_rebate"
+      ],
+      "predicted_top": "incentive_rebate",
+      "top2": [
+        [
+          "incentive_rebate",
+          0.73
+        ],
+        [
+          "billing_account",
+          0.16
+        ]
+      ],
+      "entropy": 1.25,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "11_net_metering_trueup",
+      "manifest": [
+        "billing_account"
+      ],
+      "predicted_top": "billing_account",
+      "top2": [
+        [
+          "billing_account",
+          0.89
+        ],
+        [
+          "company_updates",
+          0.04
+        ]
+      ],
+      "entropy": 0.72,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "12_autopay_failure_policy",
+      "manifest": [
+        "billing_account"
+      ],
+      "predicted_top": "billing_account",
+      "top2": [
+        [
+          "billing_account",
+          0.87
+        ],
+        [
+          "program_policies",
+          0.05
+        ]
+      ],
+      "entropy": 0.82,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "13_battery_storage_installation",
+      "manifest": [
+        "technical_installation"
+      ],
+      "predicted_top": "technical_installation",
+      "top2": [
+        [
+          "technical_installation",
+          0.67
+        ],
+        [
+          "incentive_rebate",
+          0.16
+        ]
+      ],
+      "entropy": 1.49,
+      "ambiguous_flag": false,
+      "agrees": true
+    },
+    {
+      "doc_id": "14_annual_impact_report",
+      "manifest": [
+        "company_updates"
+      ],
+      "predicted_top": "company_updates",
+      "top2": [
+        [
+          "company_updates",
+          0.74
+        ],
+        [
+          "incentive_rebate",
+          0.14
+        ]
+      ],
+      "entropy": 1.28,
+      "ambiguous_flag": false,
+      "agrees": true
+    }
+  ],
+  "failures": [
+    {
+      "id": "pp-02",
+      "failures": [
+        "category non_relevant not in ['program_policies']"
+      ]
+    },
+    {
+      "id": "ir-02",
+      "failures": [
+        "answer lacks any of ['30 days']"
+      ]
+    },
+    {
+      "id": "ir-04",
+      "failures": [
+        "answer lacks any of ['income attestation', 'interconnection application']"
+      ]
+    },
+    {
+      "id": "ba-01",
+      "failures": [
+        "answer lacks any of ['21 days']"
+      ]
+    },
+    {
+      "id": "ba-06",
+      "failures": [
+        "answer lacks any of ['Account Settings']"
+      ]
+    },
+    {
+      "id": "amb-03",
+      "failures": [
+        "answer lacks any of ['acknowledge']"
+      ]
+    },
+    {
+      "id": "nr-09",
+      "failures": [
+        "category technical_installation not in ['non_relevant']",
+        "route knowledge != abstain"
+      ]
+    }
+  ]
+}

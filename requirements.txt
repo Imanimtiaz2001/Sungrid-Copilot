@@ -1,0 +1,16 @@
+# Runtime dependencies (mirrors pyproject.toml). Install with: pip install -r requirements.txt && pip install -e . --no-deps
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+rank-bm25>=0.2.2
+qdrant-client>=1.12,<2
+fastembed>=0.4
+pydantic>=2.6
+pydantic-settings>=2.2
+pyyaml>=6.0
+typer>=0.12
+rich>=13.7
+openai>=1.40
+anthropic>=0.40
+fastapi>=0.110
+uvicorn>=0.29

@@ -1,0 +1,52 @@
+# Query/document category taxonomy.
+#
+# This file is the single source of truth for categories. Adding a category is a
+# config + data change (this file, kb_manifest.yaml, a few seed queries), not a
+# code change. See docs/DESIGN.md ("Adding a new category").
+#
+# `description` is used in two places: the LLM adjudication prompt of the
+# classifier, and as an extra training example for the local classifier.
+
+non_relevant_id: non_relevant
+
+categories:
+  - id: program_policies
+    label: Program Policies
+    description: >-
+      Cooperative membership rules and governance: membership tiers and tier
+      transfers, installer code of conduct, installer certification and renewal,
+      the member grievance procedure, data privacy and retention, annual meeting,
+      voting rights, proxy voting, quorum and Board elections.
+
+  - id: incentive_rebate
+    label: Incentive & Rebate Programs
+    description: >-
+      Financial incentive programs: the Rooftop Rebate Program (rate, cap,
+      eligibility rules, appeals, funding/waitlist, documentation), the Battery
+      Storage Add-On Incentive, the Low-Income Bill Credit Program, the
+      Commercial performance-based incentive, and rebate reversals.
+
+  - id: billing_account
+    label: Billing & Account
+    description: >-
+      Monthly bills and account management: membership fees, net metering rates,
+      bill issue and due dates, autopay and autopay failures, late payments and
+      disconnection, payment methods, disputing charges, the annual net metering
+      true-up, and billing adjustments.
+
+  - id: technical_installation
+    label: Technical / Installation Guidance
+    description: >-
+      Technical and installation topics: site and shading assessment, roof
+      suitability, inverter types (string vs micro-inverters), utility
+      interconnection, monitoring dashboard, inverter fault codes, seasonal
+      performance, and battery storage installation (coupling, fire clearance,
+      sizing, commissioning).
+
+  - id: company_updates
+    label: Company Updates
+    description: >-
+      News about SunGrid as an organisation: newsletter highlights, installation
+      and membership milestones, new Board members, upcoming changes such as a new
+      multi-family tier, community array expansion, awards and recognition,
+      staffing, and the annual impact report (growth, capacity, emissions).

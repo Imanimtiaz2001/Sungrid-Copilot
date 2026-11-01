@@ -1,0 +1,152 @@
+{"text": "What membership tiers does the cooperative offer?", "label": "program_policies"}
+{"text": "Which tier is right for me if I rent an apartment and can't put panels on the roof?", "label": "program_policies"}
+{"text": "Can I move from the community tier to the household tier?", "label": "program_policies"}
+{"text": "How often am I allowed to change my membership tier?", "label": "program_policies"}
+{"text": "When does a tier change take effect?", "label": "program_policies"}
+{"text": "Who reviews member grievances and how long does it take?", "label": "program_policies"}
+{"text": "How do I file a complaint about my installer's conduct?", "label": "program_policies"}
+{"text": "Is my energy usage data shared with third parties?", "label": "program_policies"}
+{"text": "How long is member usage data retained?", "label": "program_policies"}
+{"text": "What are the rules installers must follow to work with SunGrid?", "label": "program_policies"}
+{"text": "Why would an installer be removed from the approved list?", "label": "program_policies"}
+{"text": "Does each electrician need their own safety certification?", "label": "program_policies"}
+{"text": "How often must installers renew their safety certification?", "label": "program_policies"}
+{"text": "What happens if an installer lets their certification lapse?", "label": "program_policies"}
+{"text": "What does the installer renewal course involve?", "label": "program_policies"}
+{"text": "Who gets to vote at the annual cooperative meeting?", "label": "program_policies"}
+{"text": "How many votes does a community-tier account get?", "label": "program_policies"}
+{"text": "How do I assign a proxy vote?", "label": "program_policies"}
+{"text": "What is the deadline for proxy voting?", "label": "program_policies"}
+{"text": "What percentage of members is needed for quorum?", "label": "program_policies"}
+{"text": "What happens if quorum isn't reached at the annual meeting?", "label": "program_policies"}
+{"text": "Who can run for a seat on the Board?", "label": "program_policies"}
+{"text": "How are board seats elected and how often?", "label": "program_policies"}
+{"text": "How much notice is given before the annual meeting?", "label": "program_policies"}
+{"text": "Can community-tier members attend the annual meeting?", "label": "program_policies"}
+{"text": "What qualifies a business for the commercial membership tier?", "label": "program_policies"}
+{"text": "How much is the rooftop solar rebate per watt?", "label": "incentive_rebate"}
+{"text": "What is the maximum rebate a household can receive?", "label": "incentive_rebate"}
+{"text": "What system sizes qualify for the rooftop rebate program?", "label": "incentive_rebate"}
+{"text": "What are the income limits for the rooftop rebate?", "label": "incentive_rebate"}
+{"text": "Do installers have to be approved for a system to qualify for the rebate?", "label": "incentive_rebate"}
+{"text": "How do I contest a rebate eligibility determination?", "label": "incentive_rebate"}
+{"text": "How long do I have to appeal a denied rebate?", "label": "incentive_rebate"}
+{"text": "Who reviews rebate appeals?", "label": "incentive_rebate"}
+{"text": "What happens when the rebate program runs out of money for the year?", "label": "incentive_rebate"}
+{"text": "Is there a waitlist for rebate applications?", "label": "incentive_rebate"}
+{"text": "What paperwork is required for a rebate application?", "label": "incentive_rebate"}
+{"text": "What happens if my rebate application is incomplete?", "label": "incentive_rebate"}
+{"text": "Can I combine the rooftop rebate with the battery incentive?", "label": "incentive_rebate"}
+{"text": "How much is the battery storage add-on incentive?", "label": "incentive_rebate"}
+{"text": "Is a standalone home battery eligible for any incentive?", "label": "incentive_rebate"}
+{"text": "What is the cap on the battery incentive?", "label": "incentive_rebate"}
+{"text": "Who qualifies for the low-income bill credit?", "label": "incentive_rebate"}
+{"text": "Do I need solar panels to get the low-income credit?", "label": "incentive_rebate"}
+{"text": "How often do I need to recertify my income for the bill credit?", "label": "incentive_rebate"}
+{"text": "How are commercial solar incentives paid?", "label": "incentive_rebate"}
+{"text": "Who approves commercial incentive requests?", "label": "incentive_rebate"}
+{"text": "What is the performance-based incentive for businesses?", "label": "incentive_rebate"}
+{"text": "Does the rooftop rebate depend on income and system size?", "label": "incentive_rebate"}
+{"text": "Why was my previously approved rebate taken back?", "label": "incentive_rebate"}
+{"text": "Can I appeal a rebate reversal?", "label": "incentive_rebate"}
+{"text": "How is my monthly bill calculated?", "label": "billing_account"}
+{"text": "What is the membership fee for the community tier?", "label": "billing_account"}
+{"text": "What is the net metering rate for household members?", "label": "billing_account"}
+{"text": "What day of the month are bills sent out?", "label": "billing_account"}
+{"text": "How many days do I have to pay my bill?", "label": "billing_account"}
+{"text": "When is autopay charged?", "label": "billing_account"}
+{"text": "What happens if I pay my bill late?", "label": "billing_account"}
+{"text": "Will my service be cut off if I don't pay?", "label": "billing_account"}
+{"text": "How do I switch to a different credit card for payments?", "label": "billing_account"}
+{"text": "When does a new payment method take effect?", "label": "billing_account"}
+{"text": "What happens if my card is declined on autopay?", "label": "billing_account"}
+{"text": "How many times will you retry a failed autopay charge?", "label": "billing_account"}
+{"text": "How do I get back on autopay after it failed?", "label": "billing_account"}
+{"text": "Will I be notified if my automatic payment doesn't go through?", "label": "billing_account"}
+{"text": "What is the annual true-up?", "label": "billing_account"}
+{"text": "When does the true-up statement come out?", "label": "billing_account"}
+{"text": "How are excess solar credits handled at the end of the year?", "label": "billing_account"}
+{"text": "What if I used more power than I generated over the year?", "label": "billing_account"}
+{"text": "How is true-up handled if I joined net metering partway through the year?", "label": "billing_account"}
+{"text": "How do I dispute a charge on my statement?", "label": "billing_account"}
+{"text": "What's the deadline to contest a billing charge?", "label": "billing_account"}
+{"text": "Why is there an adjustment charge spread over several bills?", "label": "billing_account"}
+{"text": "How is a rebate clawback applied to my monthly bill?", "label": "billing_account"}
+{"text": "Is the true-up credit paid as a separate check?", "label": "billing_account"}
+{"text": "How much do commercial members pay per month?", "label": "billing_account"}
+{"text": "What does the site assessment check before installation?", "label": "technical_installation"}
+{"text": "Is my roof too shaded for solar panels?", "label": "technical_installation"}
+{"text": "When are micro-inverters recommended?", "label": "technical_installation"}
+{"text": "What's the difference between string inverters and micro-inverters?", "label": "technical_installation"}
+{"text": "Who files the interconnection application with the utility?", "label": "technical_installation"}
+{"text": "Can I turn my system on before the utility approves it?", "label": "technical_installation"}
+{"text": "How long does the utility take to approve interconnection?", "label": "technical_installation"}
+{"text": "Where can I see my system's generation data?", "label": "technical_installation"}
+{"text": "Who should I call when my inverter shows an error?", "label": "technical_installation"}
+{"text": "What does error code E01 mean?", "label": "technical_installation"}
+{"text": "What should I do about an E12 communication error?", "label": "technical_installation"}
+{"text": "Inverter is showing a ground fault, is it safe to restart?", "label": "technical_installation"}
+{"text": "Can panels be installed on a roof that needs replacing soon?", "label": "technical_installation"}
+{"text": "Is panel removal for a roof replacement covered?", "label": "technical_installation"}
+{"text": "My system is generating much less than the seasonal estimate, what should I do?", "label": "technical_installation"}
+{"text": "What battery coupling works with micro-inverters?", "label": "technical_installation"}
+{"text": "Can I use a DC-coupled battery with a string inverter?", "label": "technical_installation"}
+{"text": "How far from a door does a battery need to be installed?", "label": "technical_installation"}
+{"text": "Do indoor battery installations need ventilation?", "label": "technical_installation"}
+{"text": "What size battery should I get for my home?", "label": "technical_installation"}
+{"text": "Is there a limit on how big my battery can be?", "label": "technical_installation"}
+{"text": "What testing does a battery system go through before it's switched on?", "label": "technical_installation"}
+{"text": "What is islanding safety testing for batteries?", "label": "technical_installation"}
+{"text": "Does SunGrid support diagnose hardware faults?", "label": "technical_installation"}
+{"text": "How is expected monthly generation estimated?", "label": "technical_installation"}
+{"text": "What's new at SunGrid this quarter?", "label": "company_updates"}
+{"text": "What were the highlights of the latest newsletter?", "label": "company_updates"}
+{"text": "How many active installations does the cooperative have?", "label": "company_updates"}
+{"text": "Is the shared community array fully subscribed?", "label": "company_updates"}
+{"text": "Who joined the Board recently?", "label": "company_updates"}
+{"text": "Is SunGrid planning a new membership tier?", "label": "company_updates"}
+{"text": "When will multi-family housing developments be able to join?", "label": "company_updates"}
+{"text": "Is a second community solar array being built?", "label": "company_updates"}
+{"text": "Has SunGrid won any awards?", "label": "company_updates"}
+{"text": "Why was SunGrid recognized by the clean-energy association?", "label": "company_updates"}
+{"text": "Has the cooperative hired new support staff?", "label": "company_updates"}
+{"text": "How many members did SunGrid have at the end of the fiscal year?", "label": "company_updates"}
+{"text": "How fast has membership grown?", "label": "company_updates"}
+{"text": "What is the total installed capacity of the cooperative?", "label": "company_updates"}
+{"text": "How much carbon did members' solar generation offset?", "label": "company_updates"}
+{"text": "What share of household installs received a rebate last year?", "label": "company_updates"}
+{"text": "What does the annual impact report say?", "label": "company_updates"}
+{"text": "What are SunGrid's growth figures for the year?", "label": "company_updates"}
+{"text": "Any updates on the community array expansion timeline?", "label": "company_updates"}
+{"text": "What changes are coming next fiscal year?", "label": "company_updates"}
+{"text": "What's the weather forecast for this weekend?", "label": "non_relevant"}
+{"text": "Write a poem about the ocean", "label": "non_relevant"}
+{"text": "How do I bake chocolate chip cookies?", "label": "non_relevant"}
+{"text": "Who is the president of France?", "label": "non_relevant"}
+{"text": "Can you help me debug my JavaScript code?", "label": "non_relevant"}
+{"text": "What's the best laptop to buy right now?", "label": "non_relevant"}
+{"text": "Translate 'good morning' into Spanish", "label": "non_relevant"}
+{"text": "What time is it in Tokyo?", "label": "non_relevant"}
+{"text": "Recommend a good movie to watch tonight", "label": "non_relevant"}
+{"text": "How many calories are in an apple?", "label": "non_relevant"}
+{"text": "What is the square root of 144?", "label": "non_relevant"}
+{"text": "Book me a flight to New York", "label": "non_relevant"}
+{"text": "Who won the Super Bowl last year?", "label": "non_relevant"}
+{"text": "How do I change my Gmail password?", "label": "non_relevant"}
+{"text": "Explain quantum entanglement", "label": "non_relevant"}
+{"text": "What's the price of bitcoin today?", "label": "non_relevant"}
+{"text": "Tell me a fun fact about penguins", "label": "non_relevant"}
+{"text": "How do I fix a leaking kitchen faucet?", "label": "non_relevant"}
+{"text": "What are the symptoms of the flu?", "label": "non_relevant"}
+{"text": "Write a cover letter for a marketing job", "label": "non_relevant"}
+{"text": "Plan a 3-day trip to Paris", "label": "non_relevant"}
+{"text": "hello", "label": "non_relevant"}
+{"text": "thanks!", "label": "non_relevant"}
+{"text": "What is the meaning of life?", "label": "non_relevant"}
+{"text": "How do I cancel my gym membership?", "label": "non_relevant"}
+{"text": "What's a good name for my dog?", "label": "non_relevant"}
+{"text": "Compare electricity providers in California", "label": "non_relevant"}
+{"text": "What is the average price of electricity in the US?", "label": "non_relevant"}
+{"text": "How do I switch to a different power company?", "label": "non_relevant"}
+{"text": "Which phone plan has the best data deal?", "label": "non_relevant"}
+{"text": "Recommend a good credit card for travel rewards", "label": "non_relevant"}
